@@ -1,1 +1,8 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "builds": [
+    { "src": "src/**/*", "use": "@vercel/static-build" }
+  ],
+  "scripts": {
+    "build": "vite build"
+  }
+}
